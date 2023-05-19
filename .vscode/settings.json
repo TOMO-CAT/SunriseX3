@@ -136,4 +136,5 @@
     "python.formatting.provider": "none",
     "python.linting.flake8Enabled": true,
     "python.linting.enabled": true,
+    "cpplint.cpplintPath": "/home/sunrise/.local/bin/cpplint",
 }

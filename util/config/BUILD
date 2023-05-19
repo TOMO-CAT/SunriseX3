@@ -1,0 +1,12 @@
+cc_library(
+    name='config',
+    srcs=[
+    ],
+    hdrs=[
+        'toml_helper.h',
+    ],
+    deps=[
+        '//thirdparty/cpptoml:cpptoml',
+    ],
+    visibility=['PUBLIC'],
+)

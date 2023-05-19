@@ -1,0 +1,28 @@
+cc_library(
+    name='logger',
+    srcs=[
+        'file_appender.cc',
+        'log_capture.cc',
+        'log_kv.cc',
+        'logger.cc',
+        'backtrace.cc',
+    ],
+    hdrs=[
+        'file_appender.h',
+        'log_capture.h',
+        'log.h',
+        'log_kv.h',
+        'logger.h',
+        'backtrace.h',
+    ],
+    deps=[
+        '//util:util',
+        '//util/config:config',
+        '//thirdparty/cpptoml:cpptoml',
+        # '//thirdparty/backtrace:backtrace',
+        '#backtrace',
+        '#uuid',
+        '#pthread',
+    ],
+    visibility=['PUBLIC'],
+)
